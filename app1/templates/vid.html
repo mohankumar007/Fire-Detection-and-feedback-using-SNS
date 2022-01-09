@@ -1,0 +1,18 @@
+<html>
+<head>
+        <title>Video</title>
+</head>
+    
+<body>
+<div >
+<form method="POST" enctype="multipart/form-data" action="{% url 'hotel1' %}">
+{% csrf_token %}
+{{ form.as_p }} 
+
+<br/><br/>
+<button type="submit" style="background-color: #4CAF50;border: none;color: white;padding: 15px 32px;
+text-align: center;text-decoration: none;display: inline-block;font-size: 16px;" >Upload VIDEO</button>
+</form>
+</div>
+</body>
+</html>
